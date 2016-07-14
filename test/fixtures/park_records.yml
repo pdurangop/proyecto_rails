@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vehicle: one
+  slot: one
+  date_details: 2016-07-14 18:00:07
+  comments: MyString
+
+two:
+  vehicle: two
+  slot: two
+  date_details: 2016-07-14 18:00:07
+  comments: MyString
