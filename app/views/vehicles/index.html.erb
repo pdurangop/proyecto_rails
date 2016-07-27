@@ -1,0 +1,12 @@
+<div class="col-md-2">
+    <%= render partial: "layouts/user_menu" %>
+  </div>
+
+<h1>index vehicles</h1>
+
+
+<% current_user.vehicles.each do |vehi| %>
+  <%= vehi.model %><br>
+  <%= vehi.year %><br>
+  <%= vehi.vin %><br><br><br>
+<% end %>

@@ -1,0 +1,25 @@
+<h2>Register new Location</h2>
+<h3>New Location </h3>
+<%= form_for @location, url: {action: 'create'} do |form|%>
+  <div class="field">
+    <%= form.label :description, for:'description' %><br />
+    <%= form.text_field :description, placeholder: "Description", autofocus: true, required: true %>
+  </div>
+
+  <div class="field">
+    <%= form.label :max_slots %><br />
+    <%= form.text_field :max_slots, placeholder: "Quantity Slots", autofocus: true, required: true %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %><br />
+    <%= form.text_field :address, placeholder: "Address", autofocus: true, required: true %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Register Location" %><br />
+
+    <%= link_to "Cancel", locations_path %>
+  </div>
+<% end %>
+

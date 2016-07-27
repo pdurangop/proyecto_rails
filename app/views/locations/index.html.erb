@@ -1,0 +1,15 @@
+<div class="col-md-2">
+    <%= render partial: "layouts/user_menu" %>
+  </div>
+
+
+<h1>index locations</h1>
+
+<% @locations.each do |loc| %>
+  <%= loc.description %><br>
+  <%= loc.max_slots %><br>
+  <%= loc.address %><br>
+  <%= loc.latitude %><br>
+  <%= loc.longitude %><br>
+  <br><br>
+<% end %>
