@@ -5,7 +5,13 @@ class LocationsController < ApplicationController
   end
 
   def new
-    @location = Location.new
+    if current_user.is_admin
+      @location = Location.new
+    else
+      flash[:error] = 'You must be logged as Administrator'
+      redirect_to root_path
+    end
+
   end
 
   def create
