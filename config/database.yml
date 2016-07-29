@@ -15,3 +15,10 @@ test:
   encoding: utf8
   reconnect: false
   database: db/ps_test.sqlite3
+
+  default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
